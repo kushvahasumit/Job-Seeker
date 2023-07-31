@@ -1,0 +1,37 @@
+.float {
+    margin-top: 30px;
+}
+
+.marquee-container {
+    position: absolute;
+    /* top: 70%; */
+    left: 0;
+    width: 100%;
+    padding-top: 50px;
+    transform: translateY(-50%);
+}
+
+
+.marquee {
+    display: inline-flex;
+    font-size: 48px;
+    color: #ff7300;
+    scale: 2;
+    white-space: nowrap;
+    position: absolute;
+    overflow-x: hidden;
+    left: 0;
+    animation: moveSlideshow 20s linear infinite;
+
+}
+
+.marquee i {
+    margin: 0 10px;
+   
+}
+
+@keyframes moveSlideshow {
+    100% { 
+        transform: translateX(-300px);  
+      }
+}
