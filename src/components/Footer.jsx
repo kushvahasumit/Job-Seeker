@@ -100,7 +100,7 @@ export default function Footer() {
                         </div>
                         <div className="icons flex gap-0 py-[5px] justify-center text-white " >
                             <CiLocationOn className="text-[25px] icon" />
-                            <h1>Sector2, Indira Nagar, South West Delhi, India</h1>
+                            <h1>Sector1, Indira Nagar, South West Delhi, India</h1>
                         </div>
                     </div>
                 </div>
