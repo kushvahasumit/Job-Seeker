@@ -28,7 +28,7 @@ export default function Card() {
                     return (
                         <div
                             key={id}
-                            className="  w-[250px] p-[20px] rounded-[10px] text-align:center   shadow-lg shadow-greyIsh-400/700 hover:shadow-lg"
+                            className="w-[250px] p-[20px] rounded-[10px] text-align:center   shadow-lg shadow-greyIsh-400/700 hover:shadow-lg"
                         >
                             <span className=" justify-between items-center text-center gap-2 ">
 
