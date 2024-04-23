@@ -17,10 +17,10 @@ function App() {
       <Card />
       <Float />
       <Search />
-      {/* <Jobs /> */}
-      {/* <Feature /> */}
-      {/* <Testimony /> */}
-      {/* <Footer /> */}
+      <Jobs />
+      <Feature />
+      <Testimony />
+      <Footer />
     </div >
   );
 }
