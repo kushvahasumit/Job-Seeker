@@ -8,20 +8,29 @@ import Card from './components/Card';
 import Footer from './components/Footer';
 import Testimony from './components/Testimony';
 import Feature from './components/Feature';
+import { Routes, Route, Navigate } from "react-router-dom";
+
 
 function App() {
   return (
     <div className="">
       <Nav />
       <Hero />
-      <Card />
+      {/* <Card />
       <Float />
       <Search />
       <Jobs />
       <Feature />
       <Testimony />
-      <Footer />
+      <Footer /> */}
+      
     </div >
+    // <>
+    //   <Routes>
+    //     <Route path="/" element={<Nav />} />
+        
+    //   </Routes>
+    // </>
   );
 }
 
