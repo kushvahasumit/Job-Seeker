@@ -13,24 +13,24 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
-    <div className="">
-      <Nav />
-      <Hero />
-      {/* <Card />
-      <Float />
-      <Search />
-      <Jobs />
-      <Feature />
-      <Testimony />
-      <Footer /> */}
-      
-    </div >
-    // <>
-    //   <Routes>
-    //     <Route path="/" element={<Nav />} />
-        
-    //   </Routes>
-    // </>
+    // <div className="">
+    //   <Nav />
+    //   <Hero />
+    //   {/* <Card />
+    //   <Float />
+    //   <Search />
+    //   <Jobs />
+    //   <Feature />
+    //   <Testimony />
+    //   <Footer /> */}
+
+    // </div >
+    <>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/jobs" element={<Jobs />} />
+      </Routes>
+    </>
   );
 }
 

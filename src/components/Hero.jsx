@@ -1,8 +1,11 @@
 import React from 'react'
+import Nav from "./Nav";
+
 
 export default function Hero() {
     return (
       <div className="">
+        <Nav />
         <h1 className="font-bold text-4xl text-center  pt-[40px] ">
           Find your next top-tier IT job.
         </h1>
