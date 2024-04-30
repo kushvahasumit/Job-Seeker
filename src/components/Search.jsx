@@ -10,7 +10,7 @@ import { CiLocationOn } from "react-icons/ci";
 
 export default function Search() {
     return (
-        <div className='pt-36'>
+        <div className='pt-20'>
             <div className="searchDiv grid gap-10 bg-greyIsh rounded-[10px] p-[3rem]">
                 <h1 className='font-bold text-2xl text-center  '>Find the next step in your career by searching hundreds of jobs online.</h1>
                 <form action="">

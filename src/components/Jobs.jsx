@@ -1,4 +1,5 @@
 import React from 'react'
+import Search from './Search'
 
 // Imported Icons ======>
 import { BiTimeFive } from "react-icons/bi";
@@ -11,40 +12,51 @@ import logo3 from "../images/logo3.png";
 
 
 const Data = [
-    {
-        id: 1,
-        image: logo1,
-        title: "Web Developer",
-        time: "Now",
-        location: "Canada",
-        desc: "Mujhko pehchaano mein hun Don...",
-        company: "Novac Linus Co.",
-    },
+  {
+    id: 1,
+    image: logo1,
+    title: "Web Developer",
+    time: "Now",
+    location: "Canada",
+    desc: "Mujhko pehchaano mein hun Don...",
+    company: "Novac Linus Co.",
+  },
 
-    {
-        id: 2,
-        image: logo2,
-        title: "UI Designer",
-        time: "14Hrs",
-        location: "Manchester",
-        desc: "Mujhko pehchaano mein hun Don...",
-        company: "Liquid Accessments",
-    },
+  {
+    id: 2,
+    image: logo2,
+    title: "UI Designer",
+    time: "14Hrs",
+    location: "Manchester",
+    desc: "Mujhko pehchaano mein hun Don...",
+    company: "Liquid Accessments",
+  },
 
-    {
-        id: 3,
-        image: logo3,
-        title: "Software Engg.",
-        time: "10Hrs",
-        location: "Austria",
-        desc: "Mujhko pehchaano mein hun Don...",
-        company: "Web Tech Agency",
-    },]
+  {
+    id: 3,
+    image: logo3,
+    title: "Software Engg.",
+    time: "10Hrs",
+    location: "Austria",
+    desc: "Mujhko pehchaano mein hun Don...",
+    company: "Web Tech Agency",
+  },
+  {
+    id: 3,
+    image: logo3,
+    title: "Android Developer",
+    time: "18Hrs",
+    location: "US",
+    desc: "Mujhko pehchaano mein hun Don...",
+    company: "Us Fintech",
+  },
+];
 
 
 export default function Jobs() {
     return (
         <div>
+            <Search />
             <div className="jobContainer flex gap-10 justify-center flex-wrap items-center py-16">
                 {Data.map(({ id, image, title, time, location, desc, company }) => {
                     return (

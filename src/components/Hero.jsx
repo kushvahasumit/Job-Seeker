@@ -1,5 +1,8 @@
 import React from 'react'
 import Nav from "./Nav";
+import Card from './Card';
+import Float from './Float';
+import Jobs from './Jobs';
 
 
 export default function Hero() {
@@ -34,6 +37,9 @@ export default function Hero() {
         <div className="text-center">
           <small>100% Free. Easy to Join</small>
         </div>
+        <Card />
+        <Float />
+        {/* <Jobs /> */}
       </div>
     );
 }

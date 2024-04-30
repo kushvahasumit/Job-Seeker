@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Testimony from './components/Testimony';
 import Feature from './components/Feature';
 import { Routes, Route, Navigate } from "react-router-dom";
+import JobPage from './components/JobPage';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/jobs" element={<Jobs />} />
+        <Route path="/job" element={<JobPage />} />
       </Routes>
     </>
   );
