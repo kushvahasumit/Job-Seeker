@@ -2,7 +2,6 @@ import React from 'react'
 import Nav from "./Nav";
 import Card from './Card';
 import Float from './Float';
-import Jobs from './Jobs';
 
 
 export default function Hero() {
@@ -39,7 +38,6 @@ export default function Hero() {
         </div>
         <Card />
         <Float />
-        {/* <Jobs /> */}
       </div>
     );
 }
