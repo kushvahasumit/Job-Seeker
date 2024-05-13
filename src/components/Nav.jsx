@@ -14,27 +14,32 @@ export default function Nav() {
         </div>
 
         <div className="menu flex gap-4 font-semibold pr-28">
-          <Link to="/jobs">
+          <Link to="/">
+            <li className="menuList text-[#6f6f6f] hover:text-blueColor">
+              Home
+            </li>
+          </Link>
+          <Link to="/job">
             <li className="menuList text-[#6f6f6f] hover:text-blueColor">
               Jobs
             </li>
           </Link>
-          <Link to="/jobs">
+          <Link to="/companies">
             <li className="menuList text-[#6f6f6f] hover:text-blueColor">
               Companies
             </li>
           </Link>
-          <Link to="/jobs">
+          <Link to="/subscribe">
             <li className="menuList text-[#6f6f6f] hover:text-blueColor">
-              About
+              Subscribe
             </li>
           </Link>
-          <Link to="/jobs">
+          <Link to="/contact">
             <li className="menuList text-[#6f6f6f] hover:text-blueColor">
               Contact
             </li>
           </Link>
-{/*          
+          {/*          
           <li className="menuList text-[#6f6f6f] hover:text-blueColor">Blog</li>
           <li className="menuList text-[#6f6f6f] hover:text-blueColor">
             Login

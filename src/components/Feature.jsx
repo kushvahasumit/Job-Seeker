@@ -18,9 +18,9 @@ export default function Feature() {
                         <p className="lead fw-semibold pt-[10px] text-slate-400">We expedite your profile to recruiting managers.
                             ‍ Within days, you will receive many interview requests with upfront compensation offers.</p>
 
-                        <div className='pt-[30px] flex  '>
+                        {/* <div className='pt-[30px] flex  '>
                             <button type="button" className="border-2  rounded-lg border-indigo-600 font-bold w-24 h-10 hover:border-t-4 hover:bg-indigo-600 hover:text-white"><p>Check Now </p></button>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="col-md-5 ">
                         <img src={feature1} alt="img" />
@@ -36,9 +36,9 @@ export default function Feature() {
                         <h2 className="featurette-heading fw-normal lh-1  text-indigo-600 text-3xl fw-bold">Transparency in Salary<span className="text-body-secondary"> and Role</span></h2>
                         <p className="lead fw-semibold pt-[10px] text-slate-400">Companies' interview requests provide income and role specifics upfront, before you decide whether to accept or decline them.</p>
 
-                        <div className='pt-[30px] flex  '>
+                        {/* <div className='pt-[30px] flex  '>
                             <button type="button" className="border-2  rounded-lg border-indigo-600 font-bold w-24 h-10 hover:border-t-4 hover:bg-indigo-600 hover:text-white"><p>Check Now </p></button>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="col-md-5 order-md-1">
                         <img src={feature2} alt="" />
@@ -53,9 +53,9 @@ export default function Feature() {
                         <h2 className="featurette-heading fw-normal lh-1  text-indigo-600 text-3xl fw-bold">A passionate  <span
                             className="text-body-secondary">talent advocate </span></h2>
                         <p className="lead fw-semibold pt-[10px] text-slate-400">Your Talent Advocate will assist you throughout the process. From improving your profile to offering interview tips to negotiating offers!</p>
-                        <div className='pt-[30px] flex  '>
+                        {/* <div className='pt-[30px] flex  '>
                             <button type="button" className="border-2  rounded-lg border-indigo-600 font-bold w-24 h-10 hover:border-t-4 hover:bg-indigo-600 hover:text-white"><p>Check Now </p></button>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="col-md-5 ">
 

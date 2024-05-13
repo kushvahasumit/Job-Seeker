@@ -1,0 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    max-width: 1230px;
+    margin: auto;
+    padding: 0 20px;
+
+    @media screen and (min-width: 720px) {
+        padding: 0 30px;
+    }
+}
+
+#thankyou-container {
+    min-height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 75px;
+    background: linear-gradient(124deg, #473fe0 0%, #c3bce7 98%);
+
+    .content {
+        text-align: center;
+        max-width: 632px;
+
+        h1 {
+            font-size: 48px;
+            line-height: 1.083;
+            color: #fff;
+        }
+    }
+}
+
+/* $n: 300; */
+
+.thankyou {
+    position: absolute;
+}
+
+.thankyou .rotate {
+    animation: driftRotate 1s infinite both ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.thankyou .askew {
+    width: 100%;
+    height: 100%;
+    animation: drift 1s infinite alternate both ease-in-out;
+}
+
+@for $i from 0 to $n {
+    .thankyou:nth-child(#{$i}) .askew {
+        $time: 1s + random(100)*.01s;
+        animation-duration: $time;
+        animation-delay: -$time*random(100)*.01;
+    }
+
+    .thankyou:nth-child(#{$i}) .rotate {
+        $time: 1s + random(100)*.01s;
+        animation-duration: $time;
+        animation-delay: -$time*random(100)*.01;
+    }
+}
+
+@keyframes drift {
+    0% {
+        transform: skewY(10deg) translate3d(-250%, 0, 0);
+    }
+
+    100% {
+        transform: skewY(-10deg) translate3d(250%, 0, 0);
+    }
+}
+
+@keyframes driftRotate {
+    0% {
+        transform: rotateX(0);
+    }
+
+    100% {
+        transform: rotateX(360deg);
+    }
+}
