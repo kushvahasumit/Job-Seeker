@@ -1,6 +1,4 @@
 import React from 'react'
-import Search from './Search'
-
 // Imported Icons ======>
 import { BiTimeFive } from "react-icons/bi";
 

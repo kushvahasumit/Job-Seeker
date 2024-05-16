@@ -1,5 +1,4 @@
 import React from 'react'
-import Nav from "./Nav";
 import Card from './Card';
 import Float from './Float';
 import Testimony from './Testimony';
